@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Hero from "@/components/sections/Hero";
 import CompanyOverview from "@/components/sections/CompanyOverview";
-import ProductOrServices from "@/components/sections/ProductsOrServices";
+import Product from "@/components/sections/Products";
 import Testimonials from "@/components/sections/Testimonials";
 import AboutUs from "@/components/sections/AboutUs";
 
@@ -10,7 +10,7 @@ const HomePage: FC = () => {
     <main>
       <Hero />
       <CompanyOverview />
-      <ProductOrServices />
+      <Product />
       <Testimonials />
       <AboutUs />
     </main>
