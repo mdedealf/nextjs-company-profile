@@ -8,8 +8,8 @@ const Hero: FC = () => {
         <Image
           src="/images/gojek-hero-img.jpg"
           alt="Gojek hero image"
-          width={1000}
-          height={1000}
+          width={1280}
+          height={720}
           className="relative h-[calc(100vh-200px)] md:h-screen w-full object-cover"
         />
       </div>

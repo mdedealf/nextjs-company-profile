@@ -1,7 +1,7 @@
 const FOOTER_MENUS = [
   {
     title: "Company",
-    submenu: ["About", "Products", "Blod"],
+    submenu: ["About", "Products", "Teams"],
   },
   {
     title: "Join with us",

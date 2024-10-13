@@ -73,7 +73,7 @@ const Carousel: FC<CarouselProps> = ({
           <div
             key={idx}
             className={`transition-all bg-[#00AA13] rounded-full ${
-              currentSlide === idx ? "p-1" : "p-1 bg-opacity-20"
+              currentSlide === idx ? "p-1" : "p-1 bg-opacity-40"
             }`}
           />
         ))}

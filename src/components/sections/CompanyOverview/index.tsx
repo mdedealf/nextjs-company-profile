@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FC } from "react";
 import Milestones from "./Milestones/Milestones";
 import Achievements from "./Achievements/Achievements";
+import Products from "./Products/Products";
 
 const CompanyOverview: FC = () => {
   return (
@@ -18,6 +19,9 @@ const CompanyOverview: FC = () => {
       <div className="bg-main-white rounded-t-[80px] w-full md:mt-[60px] mt-[20px]">
         <Milestones />
         <Achievements />
+      </div>
+      <div>
+        <Products/>
       </div>
       <div>History</div>
       <div>Teams</div>
