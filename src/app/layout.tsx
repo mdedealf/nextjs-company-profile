@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
 import { FC, ReactNode } from "react";
-import { Montserrat } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/sections/Header";
 import Footer from "@/components/sections/Footer";
 
 export const metadata: Metadata = {
   title: "Gojek Clone",
+  description: "Welcome to my clone project for study purpose only!",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
-const montserrat = Montserrat({
+const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
@@ -21,7 +25,7 @@ interface RootLayoutProps {
 const RootLayout: FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body className={`${poppins.className} bg-main-black`}>
         <Header />
         {children}
         <Footer />

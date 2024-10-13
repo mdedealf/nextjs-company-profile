@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FC, useState } from "react";
 import NavLink from "./NavLink/NavLink";
 import { NAVBAR_LINKS } from "@/constant/navbarLinks";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
 
 const Header: FC = () => {
   const [isShowNav, setIsShowNav] = useState(false);
@@ -25,11 +26,12 @@ const Header: FC = () => {
               alt="Logo"
               width={112}
               height={32}
+              priority={true}
               className="h-[28px] w-[100px] md:h-auto md:w-auto"
             />
-            <span className="md:hidden text-[18px]" onClick={handleShowNav}>
-              =
-            </span>
+            <button className="md:hidden text-[18px]" onClick={handleShowNav}>
+              <Bars3Icon className="h-6 w-6" />
+            </button>
           </div>
           <div className="hidden md:flex items-center justify-end gap-[40px] w-full text-[18px] text-main-white">
             {NAVBAR_LINKS.map((nav, idx) => (
@@ -38,8 +40,8 @@ const Header: FC = () => {
           </div>
         </nav>
       ) : (
-        <nav className="fixed top-0 right-0 w-full h-screen flex-col bg-black gap-9 transition-all duration-500 ease-in-out">
-          <div className="flex items-center justify-between h-[80px] p-[40px]">
+        <nav className="md:hidden lg:hidden fixed top-0 right-0 w-full h-screen flex-col bg-black gap-9 transition-all duration-500 ease-in-out">
+          <div className="flex items-center justify-between h-[80px] p-[16px]">
             <Image
               src="/images/gojek-logo.svg"
               alt="Logo"
@@ -48,10 +50,10 @@ const Header: FC = () => {
               className="h-[28px] w-[100px] md:h-auto md:w-auto"
             />
             <span className="text-[18px]" onClick={handleShowNav}>
-              X
+              <XMarkIcon className="w-6 h-6" />
             </span>
           </div>
-          <div className="flex flex-col justify-center gap-5 p-[40px] text-[18px] text-main-white">
+          <div className="flex flex-col justify-center gap-5 px-[16px] py-[30px] text-[22px] text-main-white">
             {NAVBAR_LINKS.map((nav, idx) => (
               <NavLink
                 key={idx}

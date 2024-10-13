@@ -8,7 +8,7 @@ export const NAVBAR_LINKS = [
     linkName: "About",
   },
   {
-    path: "/product-services",
+    path: "/products",
     linkName: "Products",
   },
   {
