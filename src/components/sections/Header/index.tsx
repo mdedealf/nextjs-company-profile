@@ -30,7 +30,7 @@ const Header: FC = () => {
               className="h-[28px] w-[100px] md:h-auto md:w-auto"
             />
             <button className="md:hidden text-[18px]" onClick={handleShowNav}>
-              <Bars3Icon className="h-6 w-6" />
+              <Bars3Icon className="h-6 w-6 cursor-pointer" />
             </button>
           </div>
           <div className="hidden md:flex items-center justify-end gap-[40px] w-full text-[18px] text-main-white">
@@ -50,7 +50,7 @@ const Header: FC = () => {
               className="h-[28px] w-[100px] md:h-auto md:w-auto"
             />
             <span className="text-[18px]" onClick={handleShowNav}>
-              <XMarkIcon className="w-6 h-6" />
+              <XMarkIcon className="w-6 h-6 cursor-pointer" />
             </span>
           </div>
           <div className="flex flex-col justify-center gap-5 px-[16px] py-[30px] text-[22px] text-main-white">

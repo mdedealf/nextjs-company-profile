@@ -6,7 +6,7 @@ import { FC, ReactNode, useEffect, useState } from "react";
 interface CarouselProps {
   children: ReactNode[];
   autoSlide: boolean;
-  autoSlideInterval: number;
+  autoSlideInterval?: number;
 }
 
 const Carousel: FC<CarouselProps> = ({

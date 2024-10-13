@@ -30,7 +30,9 @@ const Achievements: FC = () => {
               />
               {/* Text content */}
               <div className="px-[40px] pb-[60px]">
-                <h1 className="text-[36px] font-bold">{achievement.title}</h1>
+                <h1 className="md:text-[26px] text-[36px] font-bold">
+                  {achievement.title}
+                </h1>
                 <p>{achievement.description}</p>
               </div>
             </div>
@@ -39,7 +41,7 @@ const Achievements: FC = () => {
       </div>
 
       <div className="md:hidden">
-        <Carousel autoSlide={true} autoSlideInterval={6000}>
+        <Carousel autoSlide={false}>
           {ACHIEVEMENTS_DETAILS.map((achievement, idx) => (
             // Card container
             <div
@@ -54,7 +56,7 @@ const Achievements: FC = () => {
                   priority={true}
                   width={achievement.width}
                   height={achievement.height}
-                  className=" w-full h-auto"
+                  className="w-full h-auto"
                 />
                 {/* Text content */}
                 <div className="px-[40px] pb-[60px]">

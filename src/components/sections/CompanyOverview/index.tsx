@@ -15,7 +15,7 @@ const CompanyOverview: FC = () => {
         </div>
       </div>
 
-      <div className="bg-main-white rounded-t-[80px] w-full">
+      <div className="bg-main-white rounded-t-[80px] w-full md:mt-[60px] mt-[20px]">
         <Milestones />
         <Achievements />
       </div>
