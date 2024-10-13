@@ -1,4 +1,4 @@
-const OVERVIEW_DETAILS = [
+const MILESTONE_DETAILS = [
   {
     image: "string",
     title: "Fortune's favorite",
@@ -23,4 +23,43 @@ const OVERVIEW_DETAILS = [
   },
 ];
 
-export { OVERVIEW_DETAILS };
+const ACHIEVEMENTS_DETAILS = [
+  {
+    image: "/images/achievements/achievement-1.png",
+    alt: "achievements 1",
+    width: 200,
+    height: 200,
+    style: "#7CCC6C",
+    title: "190 million+",
+    description: "app downloads since 2015",
+  },
+  {
+    image: "/images/achievements/achievement-2.png",
+    alt: "achievements 2",
+    width: 200,
+    height: 200,
+    style: "#AB8BD4",
+    title: "2 million+",
+    description: "driver partners",
+  },
+  {
+    image: "/images/achievements/achievement-3.png",
+    alt: "achievements 3",
+    width: 200,
+    height: 200,
+    style: "#FFAE62",
+    title: "900.000+",
+    description: "GoFood merchants",
+  },
+  {
+    image: "/images/achievements/achievement-4.png",
+    alt: "achievements 4",
+    width: 200,
+    height: 200,
+    style: "#4AC9E3",
+    title: "2.448x",
+    description: "jump in downloads from 2015 to 2020",
+  },
+];
+
+export { MILESTONE_DETAILS, ACHIEVEMENTS_DETAILS };

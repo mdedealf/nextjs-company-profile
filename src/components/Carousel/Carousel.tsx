@@ -1,13 +1,19 @@
 "use client";
 import { ChevronRightIcon } from "@heroicons/react/16/solid";
 import { ChevronLeftIcon } from "@heroicons/react/16/solid";
-import { FC, ReactNode, useState } from "react";
+import { FC, ReactNode, useEffect, useState } from "react";
 
 interface CarouselProps {
   children: ReactNode[];
+  autoSlide: boolean;
+  autoSlideInterval: number;
 }
 
-const Carousel: FC<CarouselProps> = ({ children: slides }) => {
+const Carousel: FC<CarouselProps> = ({
+  children: slides,
+  autoSlide,
+  autoSlideInterval,
+}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const previous = () => {
@@ -22,6 +28,13 @@ const Carousel: FC<CarouselProps> = ({ children: slides }) => {
     );
   };
 
+  useEffect(() => {
+    if (!autoSlide) return;
+    const slideInterval = setInterval(next, autoSlideInterval);
+
+    return () => clearInterval(slideInterval);
+  }, []);
+
   return (
     <div className="relative flex flex-col gap-[24px] text-main-black overflow-hidden">
       <div
@@ -30,7 +43,7 @@ const Carousel: FC<CarouselProps> = ({ children: slides }) => {
       >
         {slides.map((slide, idx) => (
           <div
-            className="w-screen flex flex-col items-center justify-center flex-shrink-0 px-[44px]"
+            className="w-screen flex flex-col items-center justify-center flex-shrink-0 px-[20px]"
             key={idx}
           >
             {slide}
@@ -55,7 +68,7 @@ const Carousel: FC<CarouselProps> = ({ children: slides }) => {
       </div>
 
       {/* Dot indicators carousel current slide */}
-      <div className="flex items-center justify-center gap-2">
+      <div className="flex items-center justify-center gap-2 py-[10px]">
         {slides.map((_, idx) => (
           <div
             key={idx}

@@ -2,7 +2,7 @@ import { FC } from "react";
 
 const Testimonials: FC = () => {
   return (
-    <section className="h-screen">
+    <section className="h-auto">
       <div>
         This section should include testimonials from satiesfied customers
       </div>

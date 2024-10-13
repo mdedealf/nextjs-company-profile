@@ -1,38 +1,69 @@
 import Carousel from "@/components/Carousel/Carousel";
-import { OVERVIEW_DETAILS } from "@/constant/overviewDetails";
+import { ACHIEVEMENTS_DETAILS } from "@/constant/overviewDetails";
+import Image from "next/image";
 import { FC } from "react";
 
 const Achievements: FC = () => {
   return (
-    <div className="md:grid md:grid-cols-4 md:gap-[24px] bg-main-white text-main-black py-[40px] md:px-[180px] rounded-t-[80px] w-full">
-      {OVERVIEW_DETAILS.map((data, idx) => (
-        <div
-          className="hidden md:flex flex-col gap-[8px] items-center w-full"
-          key={idx}
-        >
-          <div className="text-center h-[80px] w-full">{data.image}</div>
-          <h3 className="text-[24px] font-semibold text-center">
-            {data.title}
-          </h3>
-          <p className="text-[14px] md:text-[16px] font-normal text-center">
-            {data.description}
-          </p>
-        </div>
-      ))}
-      <div className="flex md:hidden">
-        <Carousel>
-          {OVERVIEW_DETAILS.map((data, idx) => (
+    <div className="flex flex-col gap-[30px] bg-main-white w-full pb-[80px] pt-[40px]">
+      <h2 className="text-[26px] md:text-[48px] font-semibold text-center mx-[20px] text-main-black">
+        We scale like a dream
+      </h2>
+
+      {/* Container */}
+      <div className="hidden md:grid md:grid-cols-4 md:px-[180px] text-main-black py-[120px] gap-[20px] overflow-x-hidden">
+        {ACHIEVEMENTS_DETAILS.map((achievement, idx) => (
+          // Card container
+          <div
+            key={idx}
+            style={{ backgroundColor: achievement.style }}
+            className="md:flex-shrink-0 md:h-auto md:w-full rounded-[40px] shadow-2xl"
+          >
+            <div className="flex flex-col gap-4">
+              <Image
+                src={achievement.image}
+                alt={achievement.alt}
+                priority={true}
+                width={achievement.width}
+                height={achievement.height}
+                className="translate-y-[-35%] w-full h-auto"
+              />
+              {/* Text content */}
+              <div className="px-[40px] pb-[60px]">
+                <h1 className="text-[36px] font-bold">{achievement.title}</h1>
+                <p>{achievement.description}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="md:hidden">
+        <Carousel autoSlide={true} autoSlideInterval={6000}>
+          {ACHIEVEMENTS_DETAILS.map((achievement, idx) => (
+            // Card container
             <div
-              className="flex flex-col gap-[8px] items-center w-full"
               key={idx}
+              style={{ backgroundColor: achievement.style }}
+              className="flex-shrink-0 h-auto w-full rounded-[40px] shadow-2xl"
             >
-              <div className="text-center h-[80px] w-full">{data.image}</div>
-              <h3 className="text-[20px] font-semibold text-center">
-                {data.title}
-              </h3>
-              <p className="text-[14px] md:text-[16px] font-normal text-center">
-                {data.description}
-              </p>
+              <div className="flex flex-col gap-4">
+                <Image
+                  src={achievement.image}
+                  alt={achievement.alt}
+                  priority={true}
+                  width={achievement.width}
+                  height={achievement.height}
+                  className=" w-full h-auto"
+                />
+                {/* Text content */}
+                <div className="px-[40px] pb-[60px]">
+                  <h1 className="text-[28px] md:text-[36px] font-bold">
+                    {achievement.title}
+                  </h1>
+                  <p>{achievement.description}</p>
+                </div>
+              </div>
             </div>
           ))}
         </Carousel>
