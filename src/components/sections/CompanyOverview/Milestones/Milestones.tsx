@@ -21,7 +21,9 @@ const Milestones: FC = () => {
               className="h-[157px] w-[149px]"
             />
           </div>
-          <h3 className="text-[24px] font-bold leading-[30px] text-center">{data.title}</h3>
+          <h3 className="text-[24px] font-bold leading-[30px] text-center">
+            {data.title}
+          </h3>
           <p className="text-[15px] md:text-[16px] font-normal text-center">
             {data.description}
           </p>

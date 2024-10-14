@@ -33,7 +33,7 @@ const Testimonials: FC = () => {
                   <h3 className="text-[20px] font-bold pt-[20px]">
                     {testimoni.name}
                   </h3>
-                  <span className="text-[14px] font-light">
+                  <span className="text-[14px] font-light underline">
                     {testimoni.job}
                   </span>
                 </div>
