@@ -1,9 +1,12 @@
 import { FC } from "react";
+import Hero from "./Hero";
+import Milestones from "./milestones";
 
 const AboutUsPage: FC = () => {
   return (
-    <section>
-      <div>About us page</div>
+    <section className="w-full">
+      <Hero />
+      <Milestones/>
     </section>
   );
 };
