@@ -6,7 +6,7 @@ import { FC } from "react";
 
 const Products: FC = () => {
   return (
-    <div className="py-[40px]">
+    <div className="py-[40px] w-full">
       <div className="flex flex-col w-full items-center gap-[12px] pt-[40px] md:pt-[80px] pb-[40px]">
         <h2 className="text-[26px] md:text-[48px] font-semibold text-center mx-[20px]">
           We build products that nations run on
@@ -16,13 +16,13 @@ const Products: FC = () => {
         </div>
       </div>
 
-      <div className="md:flex mt-[40px]">
+      <div className="md:flex mt-[40px] w-full">
         <Carousel autoSlide={false}>
           {PRODUCTS_LISTS.map((product, idx) => (
             <div
               key={idx}
               style={{ backgroundColor: product.bgBottom }}
-              className="flex flex-col min-h-[410px] md:max-w-[360px] rounded-[30px]"
+              className="flex flex-col sm:min-h-[410px] md:max-w-[380px] rounded-[30px]"
             >
               <div
                 style={{ backgroundColor: product.bgTop }}
@@ -30,6 +30,7 @@ const Products: FC = () => {
               >
                 {product.images.map((image) => (
                   <Image
+                    key={image}
                     src={image}
                     alt={image}
                     width={120}

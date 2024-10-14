@@ -3,6 +3,8 @@ import { FC } from "react";
 import Milestones from "./Milestones/Milestones";
 import Achievements from "./Achievements/Achievements";
 import Products from "./Products/Products";
+import Testimonials from "./Testimonials/Testimonials";
+import Teams from "./Teams/Teams";
 
 const CompanyOverview: FC = () => {
   return (
@@ -21,10 +23,14 @@ const CompanyOverview: FC = () => {
         <Achievements />
       </div>
       <div>
-        <Products/>
+        <Products />
       </div>
-      <div>History</div>
-      <div>Teams</div>
+      <div>
+        <Teams />
+      </div>
+      <div>
+        <Testimonials />
+      </div>
       <div>Culture</div>
     </section>
   );

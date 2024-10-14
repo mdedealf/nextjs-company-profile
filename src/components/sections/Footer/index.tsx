@@ -4,8 +4,8 @@ import { FC } from "react";
 
 const Footer: FC = () => {
   return (
-    <footer className="w-full h-auto text-main-white">
-      <div className="flex flex-col gap-[54px] md:px-[180px] md:py-[120px] px-[18px]">
+    <footer className="w-full h-auto text-main-white border-t-[1px] border-main-white border-opacity-20">
+      <div className="flex flex-col gap-[54px] md:px-[180px] md:py-[120px] px-[18px] py-[32px]">
         <div>
           <Image
             src="/images/gojek-logo.svg"
@@ -24,7 +24,7 @@ const Footer: FC = () => {
             >
               <h4 className="text-[18px] font-semibold">{menu.title}</h4>
               {menu.submenu.map((sub) => (
-                <span>{sub}</span>
+                <span className="cursor-pointer hover:underline">{sub}</span>
               ))}
             </div>
           ))}

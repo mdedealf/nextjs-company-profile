@@ -36,14 +36,14 @@ const Carousel: FC<CarouselProps> = ({
   }, []);
 
   return (
-    <div className="relative flex flex-col gap-[24px] text-main-black overflow-hidden">
+    <div className="relative flex flex-col gap-[24px] text-main-black overflow-hidden w-full">
       <div
-        className="flex transition-transform ease-out duration-500"
+        className="flex w-full transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
         {slides.map((slide, idx) => (
           <div
-            className="w-screen flex flex-col items-center justify-center flex-shrink-0 px-[20px]"
+            className="w-full flex flex-col items-center justify-center flex-shrink-0 px-[20px]"
             key={idx}
           >
             {slide}
