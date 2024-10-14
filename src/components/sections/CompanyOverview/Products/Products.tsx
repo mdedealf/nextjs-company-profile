@@ -16,8 +16,8 @@ const Products: FC = () => {
         </div>
       </div>
 
-      <div className="md:flex mt-[40px] w-full">
-        <Carousel autoSlide={true} autoSlideInterval={5000}>
+      <div className="md:flex mt-[40px] w-full md:px-[280px]">
+        <Carousel autoSlide={true} autoSlideInterval={8000}>
           {PRODUCTS_LISTS.map((product, idx) => (
             <div
               key={idx}

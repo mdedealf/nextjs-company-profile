@@ -23,12 +23,9 @@ const CompanyOverview: FC = () => {
         <Achievements />
         <Teams />
       </div>
-      <div>
-        <Products />
-      </div>
-      <div>
-        <Testimonials />
-      </div>
+      <Products />
+      <Testimonials />
+
       <div>Culture</div>
     </section>
   );

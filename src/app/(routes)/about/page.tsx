@@ -6,7 +6,11 @@ const AboutUsPage: FC = () => {
   return (
     <section className="w-full">
       <Hero />
-      <Milestones/>
+      <Milestones />
+      <div>History</div>
+      <div>Founder</div>
+      <div>Team</div>
+      <div>Culture</div>
     </section>
   );
 };
