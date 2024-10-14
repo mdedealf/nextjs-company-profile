@@ -9,7 +9,7 @@ const Teams: FC = () => {
   if (error) return <div>Error: {error.message}</div>;
 
   return (
-    <div className="flex flex-col bg-main-white pt-[40px] pb-[80px] md:px-[180px] w-full">
+    <div className="flex flex-col bg-main-white pb-[120px] md:px-[180px] w-full">
       <div className="flex flex-col w-full items-center gap-[12px] pt-[40px] md:pt-[80px] pb-[40px]">
         <h2 className="text-[26px] md:text-[48px] font-semibold text-center mx-[20px] text-main-black">
           Meet our teams

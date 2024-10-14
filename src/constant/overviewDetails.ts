@@ -1,22 +1,22 @@
 const MILESTONE_DETAILS = [
   {
-    image: "/images/milestones/stars.png",
+    image: "/images/milestones/image-1.png",
     title: "Fortune's favorite",
     description:
       "Southeast Asia's only company to make it to Fortune's 'Change the World' list twice.",
   },
   {
-    image: "/images/milestones/stars.png",
+    image: "/images/milestones/image-2.png",
     title: "$7.1 b contribution",
     description: "Value added to the Indonesian economy in 2019.",
   },
   {
-    image: "/images/milestones/stars.png",
+    image: "/images/milestones/image-3.png",
     title: "Tonne times greener",
     description: "Saved 11.3 tonnes of plastic in cutlery since October 2020.",
   },
   {
-    image: "/images/milestones/stars.png",
+    image: "/images/milestones/image-4.png",
     title: "Digitising merchants",
     description:
       "Resulted in 80% growth in number of GoFood merchants during pandemic.",
