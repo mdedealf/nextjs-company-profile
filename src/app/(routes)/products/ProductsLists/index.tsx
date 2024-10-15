@@ -38,7 +38,7 @@ const ProductLists: FC<ProductListsProps> = ({
         </p>
       </div>
       <div className="relative z-10 w-full pb-[160px] rounded-t-[64px]">
-        <div className="px-[20px] md:grid md:grid-cols-4 md:gap-[30px] md:mx-auto md:max-w-[1600px] z-10">
+        <div className="flex flex-col gap-[20px] px-[20px] md:grid md:grid-cols-4 md:gap-[30px] md:mx-auto md:max-w-[1600px] z-10">
           {product.map((prod, idx) => (
             <div
               key={idx}

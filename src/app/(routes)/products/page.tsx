@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Product from "./Product";
 import ProductLists from "./ProductsLists";
 import { PRODUCTS_PAGE_LISTS } from "@/constant/productsPageLists";
+// import SwiperCards from "@/components/ui/SwiperCards";
 
 const Products: FC = () => {
   return (
