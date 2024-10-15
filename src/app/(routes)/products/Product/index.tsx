@@ -19,14 +19,15 @@ const Product: FC = () => {
               className="flex flex-col items-start gap-[12px] p-[32px] rounded-[30px] min-h-[272px]"
             >
               {product.images.map((image) => (
-                <Image
-                  key={image}
-                  src={image}
-                  alt={image}
-                  width={100}
-                  height={32}
-                  className="h-[32px] w-auto object-cover"
-                />
+                <div key={image} className="h-[32px] w-auto">
+                  <Image
+                    src={image}
+                    alt={image}
+                    width={100}
+                    height={32}
+                    className="h-[32px] w-auto object-cover"
+                  />
+                </div>
               ))}
             </div>
             <div className="flex flex-col items-center pt-[16px] pb-[32px] gap-[6px]">

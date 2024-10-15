@@ -44,7 +44,7 @@ const ProductLists: FC<ProductListsProps> = ({
               key={idx}
               className="flex flex-col gap-[20px] bg-main-white p-[40px] rounded-[30px] min-h-[210px]"
             >
-              <div>
+              <div className="w-auto h-[32px]">
                 <Image
                   src={prod.image}
                   alt="product detail 1"

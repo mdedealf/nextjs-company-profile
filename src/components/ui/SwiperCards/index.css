@@ -1,0 +1,45 @@
+.swiper-container {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+
+/* Custom Swiper Buttons */
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.custom-prev {
+  left: 0; /* Adjust as needed */
+}
+
+.custom-next {
+  right: 0; /* Adjust as needed */
+}
+
+.custom-prev svg,
+.custom-next svg {
+  width: 30px;
+  height: 30px;
+  fill: #000000; /* Change to your preferred color */
+}
+
+/* Custom Pagination Dots */
+.custom-pagination-bullet {
+  background-color: white;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 4px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-pagination-bullet-active {
+  opacity: 1;
+  background-color: #00aa13; /* Active bullet color */
+}
