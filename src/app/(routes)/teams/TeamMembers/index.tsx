@@ -11,12 +11,12 @@ const TeamMembers: FC = () => {
   if (isLoading) return <div>Loading...</div>;
 
   return (
-    <div className="min-h-screen w-full px-[20px] md:px-[120px] lg:px-[180px]">
-      <div className="flex flex-col md:grid md:grid-cols-4 gap-[40px]">
+    <div className="min-h-screen max-w-[1280px] flex items-center justify-center w-full px-[20px]">
+      <div className="flex flex-col md:grid md:grid-cols-4 gap-[30px]">
         {teams?.map((team, idx) => (
           <div
             key={idx}
-            className="flex flex-col items-center w-full md:pb-[60px] gap-[10px]"
+            className="flex flex-col items-center w-full md:pb-[60px] gap-[10px] cursor-pointer group"
           >
             <div className="relative">
               <Image
@@ -24,12 +24,12 @@ const TeamMembers: FC = () => {
                 alt={team.name.first}
                 height={158}
                 width={158}
-                className="h-[340px] w-auto object-cover rounded-[20px]"
+                className="h-[320px] w-[320px] object-cover rounded-[20px]"
               />
-              <div className="absolute top-0 h-full w-full bg-main-black opacity-35 rounded-[20px]" />
+              <div className="absolute top-0 h-full w-full bg-main-black opacity-30 group-hover:opacity-10 rounded-[20px]" />
             </div>
-            <div className="flex flex-col w-full justify-start md:px-[20px]">
-              <span className="text-[24px] font-bold mb-[6px]">
+            <div className="flex flex-col w-full justify-start">
+              <span className="text-[24px] font-bold mb-[6px] group-hover:text-[#00880D]">
                 {team.name.first} {team.name.last}
               </span>
 
