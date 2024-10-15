@@ -15,13 +15,20 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 
 interface SwiperCardsProps {
   children: ReactNode;
+  slidesPerView: number;
+  loop: boolean;
 }
 
-const SwiperCards: FC<SwiperCardsProps> = ({ children }) => {
+const SwiperCards: FC<SwiperCardsProps> = ({
+  children,
+  slidesPerView,
+  loop,
+}) => {
   return (
     <div className="swiper-container relative">
       <Swiper
-        slidesPerView={4}
+        slidesPerView={slidesPerView}
+        loop={loop}
         spaceBetween={40}
         navigation={{
           enabled: true,
@@ -37,7 +44,6 @@ const SwiperCards: FC<SwiperCardsProps> = ({ children }) => {
         }}
         scrollbar={{ draggable: true }}
         className="w-full"
-        loop={true}
         breakpoints={{
           375: {
             slidesPerView: 1,

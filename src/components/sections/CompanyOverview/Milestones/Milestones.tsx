@@ -5,10 +5,10 @@ import { FC } from "react";
 
 const Milestones: FC = () => {
   return (
-    <div className="md:grid md:grid-cols-4 md:gap-[24px] text-main-black md:px-[180px] w-full border-b-[1px] border-b-main-black border-opacity-10 pb-[50px]">
+    <div className="md:grid md:grid-cols-4 md:gap-[34px] text-main-black md:px-[180px] w-full border-b-[1px] border-b-main-black border-opacity-10 pb-[50px]">
       {MILESTONE_DETAILS.map((data, idx) => (
         <div
-          className="hidden md:flex md:flex-col md:gap-[12px] md:items-center w-full translate-y-[-15%]"
+          className="hidden md:flex md:flex-col md:gap-[20px] md:items-center w-full translate-y-[-15%]"
           key={idx}
         >
           <div className="flex items-center justify-center h-[157px] w-[149px] mb-[20px]">
@@ -24,7 +24,7 @@ const Milestones: FC = () => {
           <h3 className="text-[24px] font-bold leading-[30px] text-center">
             {data.title}
           </h3>
-          <p className="text-[15px] md:text-[16px] font-normal text-center">
+          <p className="text-[15px] md:text-[18px] font-normal text-center">
             {data.description}
           </p>
         </div>

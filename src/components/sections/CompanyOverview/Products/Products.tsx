@@ -1,4 +1,5 @@
 import Carousel from "@/components/Carousel/Carousel";
+import ProductsCards from "@/components/ProductsCards";
 import { PRODUCTS_LISTS } from "@/constant/productsLists";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,7 +9,7 @@ const Products: FC = () => {
   return (
     <div className="py-[40px] w-full">
       <div className="flex flex-col w-full items-center gap-[12px] pt-[40px] md:pt-[80px] pb-[40px]">
-        <h2 className="text-[26px] md:text-[48px] font-semibold text-center mx-[20px]">
+        <h2 className="text-[26px] md:text-[48px] font-bold text-center mx-[20px]">
           We build products that nations run on
         </h2>
         <div className="bg-main-green text-main-white px-[24px] py-[12px] flex items-center justify-center rounded-[24px] font-semibold text-[18px]">
@@ -16,7 +17,9 @@ const Products: FC = () => {
         </div>
       </div>
 
-      <div className="md:flex mt-[40px] w-full md:px-[280px]">
+      <ProductsCards />
+
+      {/* <div className="md:flex mt-[40px] w-full md:px-[280px]">
         <Carousel autoSlide={true} autoSlideInterval={8000}>
           {PRODUCTS_LISTS.map((product, idx) => (
             <div
@@ -50,7 +53,7 @@ const Products: FC = () => {
             </div>
           ))}
         </Carousel>
-      </div>
+      </div> */}
     </div>
   );
 };

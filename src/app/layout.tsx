@@ -3,7 +3,7 @@ import { FC, ReactNode } from "react";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/sections/Header";
-import Footer from "@/components/sections/Footer";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Gojek Clone",

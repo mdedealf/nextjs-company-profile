@@ -53,18 +53,18 @@ const Carousel: FC<CarouselProps> = ({
 
       {/* Carousel navigation left and right */}
       <div className="absolute inset-0 flex items-center justify-between">
-        <button
+        <div
           onClick={previous}
-          className="bg-main-white text-main-black border rounded-full p-[10px] opacity-50 hover:opacity-100"
+          className="bg-main-white cursor-pointer text-main-black border rounded-full p-[10px] opacity-50 hover:opacity-100"
         >
           <ChevronLeftIcon className="h-5 w-5" />
-        </button>
-        <button
+        </div>
+        <div
           onClick={next}
-          className="bg-main-white text-main-black border rounded-full p-[10px] opacity-50 hover:opacity-100"
+          className="bg-main-white cursor-pointer text-main-black border rounded-full p-[10px] opacity-50 hover:opacity-100"
         >
           <ChevronRightIcon className="h-5 w-5" />
-        </button>
+        </div>
       </div>
 
       {/* Dot indicators carousel current slide */}

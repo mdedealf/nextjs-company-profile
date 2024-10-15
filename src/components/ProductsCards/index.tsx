@@ -1,18 +1,17 @@
-// import Carousel from "@/components/Carousel/Carousel";
-import SwiperCards from "@/components/ui/SwiperCards";
+import { FC } from "react";
 import { PRODUCTS_LISTS } from "@/constant/productsLists";
 import Image from "next/image";
-import { FC } from "react";
+import SwiperCards from "@/components/SwiperCards";
 
-const Product: FC = () => {
+const ProductsCards: FC = () => {
   return (
     <div className="flex mt-[80px] mb-[180px] w-full px-[20px] lg:px-[40px] 2xl:px-[180px]">
-      <SwiperCards>
+      <SwiperCards slidesPerView={4} loop={true}>
         {PRODUCTS_LISTS.map((product, idx) => (
           <div
             key={idx}
             style={{ backgroundColor: product.bgBottom }}
-            className="flex flex-col min-h-[440px] min-w-auto max-w-auto md:max-w-auto rounded-[30px]"
+            className="flex flex-col min-h-[440px] min-w-auto max-w-auto rounded-[30px]"
           >
             <div
               style={{ backgroundColor: product.bgTop }}
@@ -23,9 +22,10 @@ const Product: FC = () => {
                   <Image
                     src={image}
                     alt={image}
-                    width={100}
+                    width={160}
                     height={32}
-                    className="h-[32px] w-auto object-cover"
+                    priority={true}
+                    className="h-auto w-auto object-cover"
                   />
                 </div>
               ))}
@@ -45,4 +45,4 @@ const Product: FC = () => {
   );
 };
 
-export default Product;
+export default ProductsCards;

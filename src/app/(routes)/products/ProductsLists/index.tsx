@@ -1,3 +1,4 @@
+import SwiperCards from "@/components/SwiperCards";
 import Image from "next/image";
 import { FC } from "react";
 
@@ -38,26 +39,29 @@ const ProductLists: FC<ProductListsProps> = ({
         </p>
       </div>
       <div className="relative z-10 w-full pb-[160px] rounded-t-[64px]">
-        <div className="flex flex-col gap-[20px] px-[20px] md:grid md:grid-cols-4 md:gap-[30px] md:mx-auto md:max-w-[1600px] z-10">
-          {product.map((prod, idx) => (
-            <div
-              key={idx}
-              className="flex flex-col gap-[20px] bg-main-white p-[40px] rounded-[30px] min-h-[210px]"
-            >
-              <div className="w-auto h-[32px]">
-                <Image
-                  src={prod.image}
-                  alt="product detail 1"
-                  width={200}
-                  height={32}
-                  className="w-auto h-[32px]"
-                />
+        <div className="flex w-full gap-[20px] md:gap-[30px] z-10 px-[20px] lg:px-[40px] 2xl:px-[180px]">
+          <SwiperCards slidesPerView={3} loop={true}>
+            {product.map((prod, idx) => (
+              <div
+                key={idx}
+                className="flex flex-col gap-[20px] bg-main-white p-[40px] rounded-[30px] min-h-[210px]"
+              >
+                <div className="w-auto h-[32px] aspect-auto overflow-hidden">
+                  <Image
+                    src={prod.image}
+                    alt="product detail"
+                    width={200}
+                    height={32}
+                    priority={true}
+                    className="w-auto h-[32px] object-cover"
+                  />
+                </div>
+                <p className="text-[16px] md:text-[18px] pb-[24px]">
+                  {prod.description}
+                </p>
               </div>
-              <p className="text-[16px] md:text-[18px] pb-[24px]">
-                {prod.description}
-              </p>
-            </div>
-          ))}
+            ))}
+          </SwiperCards>
         </div>
       </div>
       <div className="absolute right-0 top-0 flex justify-end w-full h-auto">
