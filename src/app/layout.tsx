@@ -4,6 +4,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/sections/Header";
 import Footer from "@/components/Footer";
+import QueryClientWraper from "@/components/QueryClientWraper";
 
 export const metadata: Metadata = {
   title: "Gojek Clone",
@@ -26,9 +27,11 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
       <body className={`${poppins.className} bg-main-black`}>
-        <Header />
-        {children}
-        <Footer />
+        <QueryClientWraper>
+          <Header />
+          {children}
+          <Footer />
+        </QueryClientWraper>
       </body>
     </html>
   );

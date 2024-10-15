@@ -8,7 +8,12 @@ const Products: FC = () => {
   return (
     <section className="w-full h-auto">
       <Hero />
-      <ProductsCards/>
+      <div className="flex flex-col w-full items-center gap-[12px] pt-[40px] md:pt-[80px] pb-[40px]">
+        <h2 className="text-[26px] md:text-[48px] font-bold text-center mx-[20px] text-main-white">
+          We build products that nations run on
+        </h2>
+      </div>
+      <ProductsCards />
       {PRODUCTS_PAGE_LISTS.map((product, idx) => (
         <ProductLists key={idx} {...product} />
       ))}

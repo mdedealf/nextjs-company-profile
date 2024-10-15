@@ -15,10 +15,10 @@ const Hero: FC = () => {
         <div className="absolute inset-0 bg-main-black opacity-20" />
       </div>
       <div className="absolute top-0 flex flex-col items-start justify-end w-full h-[calc(100vh-200px)] md:h-screen py-[50px] md:py-[200px] md:px-[120px] z-10 gap-[16px]">
-        <h1 className="text-[26px] font-semibold text-main-white px-[22px] md:w-[55%] md:text-[48px]">
+        <h1 className="text-[26px] font-semibold text-main-white  md:w-[55%] md:text-[48px]">
           Been quite a ride.
         </h1>
-        <p className="text-[16px] font-light text-main-white px-[22px] md:w-[55%] md:text-[20px]">
+        <p className="text-[18px] text-main-white font-light md:w-[55%] md:text-[20px]">
           Know our journey, and the people behind it.
         </p>
       </div>
