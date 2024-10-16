@@ -1,4 +1,5 @@
 "use client";
+import FounderImages from "@/components/FounderImages";
 import useRandomUser from "@/hooks/useRandomUser";
 import Image from "next/image";
 import { FC } from "react";
@@ -15,8 +16,34 @@ const TeamMembers: FC = () => {
     );
 
   return (
-    <div className="min-h-screen max-w-[1280px] flex md:items-center justify-center w-full px-[20px]">
-      <div className="flex flex-col w-full md:grid md:grid-cols-3 lg:grid-cols-4 gap-[30px]">
+    <div className="min-h-screen max-w-[1280px] flex flex-col md:items-center justify-center w-full gap-[60px] px-[20px] pb-[120px]">
+      <div className="flex flex-col w-full mb-[80px] gap-[60px]">
+        <div className="w-full flex flex-col gap-[20px]">
+          <h2 className="text-[48px] font-bold text-start w-full">
+            Meet the Founders
+          </h2>
+          <p className="text-[18px] md:max-w-[65%]">
+            Visionaries dedicated to transforming ideas into reality, driving
+            innovation for a better tomorrow.
+          </p>
+        </div>
+        <div className="flex flex-col md:flex-row w-full gap-[80px]">
+          <FounderImages />
+        </div>
+      </div>
+
+      <div className="w-full flex flex-col gap-[20px]">
+        <h2 className="text-[48px] font-bold text-start w-full">
+          Meet the Team
+        </h2>
+        <p className="text-[18px] md:max-w-[65%]">
+          Behind every solution, there's a dedicated team driving innovation. We
+          are passionate about connecting people, solving real-world problems,
+          and creating seamless experiences for millions. Together, we push
+          boundaries, one ride, one order, one solution at a time.
+        </p>
+      </div>
+      <div className="flex flex-col w-full md:grid md:grid-cols-3 lg:grid-cols-4 gap-[40px]">
         {teams?.map((team, idx) => (
           <div
             key={idx}
@@ -37,10 +64,10 @@ const TeamMembers: FC = () => {
                 {team.name.first} {team.name.last}
               </span>
 
-              <p className="flex items-center gap-[10px] text-[16px] font-normal">
+              <p className="flex items-center gap-[10px] text-[18px]">
                 {team.jobRole}
               </p>
-              <p className="flex text-[13px] items-center gap-[10px] font-light">
+              <p className="flex text-[14px] items-center gap-[10px] font-light">
                 {team.email}
               </p>
             </div>

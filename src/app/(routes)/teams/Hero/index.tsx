@@ -2,7 +2,7 @@ import { FC } from "react";
 
 const Hero: FC = () => {
   return (
-    <div className="min-h-[500px] max-w-[1220px] w-full flex flex-col justify-center mt-[100px]">
+    <div className="h-screen max-w-[1220px] w-full flex flex-col justify-center mt-[100px]">
       <div className="flex flex-col items-start justify-center gap-[24px] px-[20px]">
         <h1 className="w-full text-[26px] md:text-[46px] font-bold min-w-auto max-w-[600px] text-main-black">
           Meet the Minds Behind the Movement
