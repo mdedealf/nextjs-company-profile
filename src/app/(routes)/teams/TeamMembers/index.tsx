@@ -8,7 +8,7 @@ const TeamMembers: FC = () => {
   const { data: teams, error, isLoading } = useRandomUser();
 
   if (error) return <div>Error</div>;
-  if (isLoading) return <div>Loading...</div>;
+  if (isLoading) return <div className="h-screen w-full text-center text-[26px] font-bold text-[#00880D]">Loading...</div>;
 
   return (
     <div className="min-h-screen max-w-[1280px] flex items-center justify-center w-full px-[20px]">
