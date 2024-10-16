@@ -19,9 +19,9 @@ const Hero: FC = () => {
           All-in-One Services at Your Fingertips
         </h1>
         <p className="text-[16px] font-light text-main-white px-[22px] md:w-[55%] md:text-[20px]">
-          Discover Gojek's range of products built to make everyday tasks
-          easier. From transportation and delivery to payments, we're here to
-          simplify life, drive growth, and create lasting impact.
+          Discover Gojek&#39;s range of products built to make everyday tasks
+          easier. From transportation and delivery to payments, we&#39;re here
+          to simplify life, drive growth, and create lasting impact.
         </p>
       </div>
     </section>

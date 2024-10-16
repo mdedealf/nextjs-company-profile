@@ -1,7 +1,7 @@
 "use client";
 import { ChevronRightIcon } from "@heroicons/react/16/solid";
 import { ChevronLeftIcon } from "@heroicons/react/16/solid";
-import { FC, ReactNode, useEffect, useState } from "react";
+import { FC, ReactNode, useCallback, useEffect, useState } from "react";
 
 interface CarouselProps {
   children: ReactNode[];
@@ -22,19 +22,18 @@ const Carousel: FC<CarouselProps> = ({
     );
   };
 
-  const next = () => {
+  const next = useCallback(() => {
     setCurrentSlide((currentSlide) =>
       currentSlide === slides.length - 1 ? 0 : currentSlide + 1
     );
-  };
+  }, [slides.length]);
 
   useEffect(() => {
     if (!autoSlide) return;
     const slideInterval = setInterval(next, autoSlideInterval);
 
     return () => clearInterval(slideInterval);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [autoSlide, autoSlideInterval, next]);
 
   return (
     <div className="relative flex flex-col gap-[24px] text-main-black overflow-hidden w-full">
