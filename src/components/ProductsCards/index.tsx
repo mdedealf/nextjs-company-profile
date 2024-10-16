@@ -1,12 +1,12 @@
 import { FC } from "react";
 import { PRODUCTS_LISTS } from "@/constant/productsLists";
 import Image from "next/image";
-import SwiperCards from "@/components/SwiperCardsWraper";
+import SwiperCardsWraper from "@/components/SwiperCardsWraper";
 
 const ProductsCards: FC = () => {
   return (
     <div className="flex mt-[80px] mb-[180px] w-full px-[20px] lg:px-[40px] 2xl:px-[180px]">
-      <SwiperCards slidesPerView={4} loop={true}>
+      <SwiperCardsWraper slidesPerView={4} loop={true}>
         {PRODUCTS_LISTS.map((product, idx) => (
           <div
             key={idx}
@@ -23,9 +23,9 @@ const ProductsCards: FC = () => {
                     src={image}
                     alt={image}
                     width={160}
-                    height={32}
+                    height={12}
                     priority={true}
-                    className="h-auto w-auto object-cover"
+                    className="h-[30px] w-auto object-cover"
                   />
                 </div>
               ))}
@@ -40,7 +40,7 @@ const ProductsCards: FC = () => {
             </div>
           </div>
         ))}
-      </SwiperCards>
+      </SwiperCardsWraper>
     </div>
   );
 };

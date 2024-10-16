@@ -27,7 +27,7 @@ const ProductLists: FC<ProductListsProps> = ({
       style={{ backgroundColor: bgColor }}
       className="relative w-full h-auto rounded-t-[64px] mt-[-80px]"
     >
-      <div className="relative z-10 flex flex-col gap-[20px] px-[20px] md:mx-auto md:max-w-[1600px] py-[80px]">
+      <div className="relative z-10 flex flex-col gap-[20px] px-[20px] lg:px-[40px] 2xl:px-[180px] md:max-w-[1600px] py-[80px]">
         <h2 className="text-[26px] md:text-[36px] font-bold text-main-black">
           {title}
         </h2>
@@ -37,20 +37,20 @@ const ProductLists: FC<ProductListsProps> = ({
       </div>
       <div className="relative z-10 w-full pb-[160px] rounded-t-[64px]">
         <div className="flex w-full gap-[20px] md:gap-[30px] z-10 px-[20px] lg:px-[40px] 2xl:px-[180px]">
-          <SwiperCards slidesPerView={3} loop={true}>
+          <SwiperCards slidesPerView={4} loop={true}>
             {product.map((prod, idx) => (
               <div
                 key={idx}
                 className="flex flex-col gap-[20px] bg-main-white p-[40px] rounded-[30px] min-h-[210px]"
               >
-                <div className="w-auto h-[32px] aspect-auto overflow-hidden">
+                <div className="h-[32px] w-auto">
                   <Image
                     src={prod.image}
                     alt="product detail"
-                    width={200}
-                    height={32}
+                    width={300}
+                    height={30}
                     priority={true}
-                    className="w-auto h-[32px] object-cover"
+                    className="h-[32px] w-auto object-cover"
                   />
                 </div>
                 <p className="text-[16px] md:text-[18px] pb-[24px]">

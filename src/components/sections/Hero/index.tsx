@@ -9,8 +9,8 @@ const Hero: FC = () => {
         <Image
           src="/images/gojek-hero-img-upscaled.webp"
           alt="Gojek hero image"
-          width={1280}
-          height={720}
+          width={2560}
+          height={1440}
           className="relative h-[calc(100vh-200px)] md:h-screen w-full object-cover"
         />
         <div className="absolute inset-0 bg-main-black opacity-20" />
