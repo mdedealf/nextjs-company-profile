@@ -1,6 +1,5 @@
 "use client";
 import useRandomUser from "@/hooks/useRandomUser";
-import { BriefcaseIcon, PhoneIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import { FC } from "react";
 
@@ -8,10 +7,15 @@ const TeamMembers: FC = () => {
   const { data: teams, error, isLoading } = useRandomUser();
 
   if (error) return <div>Error</div>;
-  if (isLoading) return <div className="h-screen w-full text-center text-[26px] font-bold text-[#00880D]">Loading...</div>;
+  if (isLoading)
+    return (
+      <div className="h-screen w-full text-center text-[26px] font-bold text-[#00880D]">
+        Loading...
+      </div>
+    );
 
   return (
-    <div className="min-h-screen max-w-[1280px] flex items-center justify-center w-full px-[20px]">
+    <div className="min-h-screen max-w-[1420px] flex items-center justify-center w-full px-[20px]">
       <div className="flex flex-col md:grid md:grid-cols-4 gap-[30px]">
         {teams?.map((team, idx) => (
           <div
@@ -33,12 +37,11 @@ const TeamMembers: FC = () => {
                 {team.name.first} {team.name.last}
               </span>
 
-              <p className="flex items-center gap-[10px] text-[18px] font-normal">
-                <BriefcaseIcon className="w-4 h-4" /> {team.jobRole}
+              <p className="flex items-center gap-[10px] text-[20px] font-normal">
+                {team.jobRole}
               </p>
               <p className="flex items-center gap-[10px] font-light">
-                <PhoneIcon className="w-4 h-4" />
-                {team.phone}
+                {team.email}
               </p>
             </div>
           </div>

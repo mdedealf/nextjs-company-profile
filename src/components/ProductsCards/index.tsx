@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { PRODUCTS_LISTS } from "@/constant/productsLists";
 import Image from "next/image";
-import SwiperCards from "@/components/SwiperCards";
+import SwiperCards from "@/components/SwiperCardsWraper";
 
 const ProductsCards: FC = () => {
   return (

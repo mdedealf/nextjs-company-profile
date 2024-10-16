@@ -14,7 +14,7 @@ import { Pagination, Navigation } from "swiper/modules";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 
 interface SwiperCardsProps {
-  children: ReactNode;
+  children: ReactNode[];
   slidesPerView: number;
   loop: boolean;
 }
@@ -24,6 +24,18 @@ const SwiperCards: FC<SwiperCardsProps> = ({
   slidesPerView,
   loop,
 }) => {
+  if (children.length <= 4) {
+    return (
+      <div className="flex gap-[20px] md:gap-[30px] z-10  justify-center w-full">
+        {children.map((child, idx) => (
+          <div key={idx} className="w-full">
+            {child}
+          </div>
+        ))}
+      </div>
+    );
+  }
+
   return (
     <div className="swiper-container relative">
       <Swiper

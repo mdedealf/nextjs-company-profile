@@ -5,10 +5,8 @@ type User = {
   };
   picture: {
     large: string;
-    thumbnail: string;
   };
   email: string;
-  phone: string;
   jobRole: string;
 };
 

@@ -36,10 +36,8 @@ const useRandomUser = () => {
       },
       picture: {
         large: user.picture.large,
-        thumbnail: user.picture.thumbnail,
       },
       email: user.email,
-      phone: user.phone,
       jobRole: techRoles[Math.floor(Math.random() * techRoles.length)],
     }));
   };

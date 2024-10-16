@@ -1,5 +1,5 @@
 import { FC } from "react";
-import SwiperCards from "@/components/SwiperCards";
+import SwiperCards from "@/components/SwiperCardsWraper";
 import Image from "next/image";
 
 interface ProductListsProps {
