@@ -22,13 +22,13 @@ const TeamMembers: FC = () => {
             key={idx}
             className="flex flex-col items-center w-full md:pb-[40px] gap-[10px] cursor-pointer group"
           >
-            <div className="min-h-[300px] max-h-auto w-full md:h-[282px] md:w-[282px] relative">
+            <div className="min-h-[282px] max-h-auto w-full md:h-[282px] md:w-[282px] relative">
               <Image
                 src={team.picture.large}
                 alt={team.name.first}
                 height={282}
                 width={282}
-                className="min-h-[300px] max-h-auto w-full md:h-[282px] md:w-[282px] md:grayscale-[85%] object-cover rounded-[12px] transition-all duration-300 group-hover:grayscale-0"
+                className="min-h-[282px] max-h-auto w-full md:h-[282px] md:w-[282px] md:grayscale-[85%] object-cover rounded-[12px] transition-all duration-300 group-hover:grayscale-0"
               />
               <div className="absolute top-0 h-full w-full bg-main-black opacity-10 group-hover:opacity-0 rounded-[12px] transition-all duration-300" />
             </div>
