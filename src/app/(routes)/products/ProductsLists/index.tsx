@@ -67,6 +67,7 @@ const ProductLists: FC<ProductListsProps> = ({
           alt="product detail bg img"
           width={822}
           height={617}
+          className="h-auto w-auto object-cover"
         />
       </div>
     </div>

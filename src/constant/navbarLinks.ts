@@ -4,8 +4,8 @@ export const NAVBAR_LINKS = [
     linkName: "Home",
   },
   {
-    path: "/about",
-    linkName: "About",
+    path: "/about-us",
+    linkName: "About us",
   },
   {
     path: "/products",

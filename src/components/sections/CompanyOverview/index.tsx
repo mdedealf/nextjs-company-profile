@@ -14,7 +14,7 @@ const CompanyOverview: FC = () => {
           We&#39;re Gojek, the drivers of change
         </h2>
         <div className="bg-main-green text-main-white px-[24px] py-[12px] flex items-center justify-center rounded-[24px] font-semibold text-[18px]">
-          <Link href="/about">More About Us</Link>
+          <Link href="/about-us">More About Us</Link>
         </div>
       </div>
 

@@ -29,7 +29,7 @@ const Milestones: FC = () => {
                   className="max-w-auto max-h-auto object-cover"
                 />
               </div>
-              <p className="text-[16px] text-main-white font-light leading-[24px] md:text-left md:max-w-[600px]">
+              <p className="text-[18px] text-main-white font-light leading-[24px] md:text-left md:max-w-[600px]">
                 {journey.description}
               </p>
             </div>
