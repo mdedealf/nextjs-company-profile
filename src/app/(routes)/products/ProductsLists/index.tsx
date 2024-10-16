@@ -1,9 +1,8 @@
+import { FC } from "react";
 import SwiperCards from "@/components/SwiperCards";
 import Image from "next/image";
-import { FC } from "react";
 
 interface ProductListsProps {
-  key: number;
   title: string;
   description: string;
   bgImage: string;
@@ -17,7 +16,6 @@ interface Product {
 }
 
 const ProductLists: FC<ProductListsProps> = ({
-  key,
   title,
   description,
   bgImage,
@@ -26,7 +24,6 @@ const ProductLists: FC<ProductListsProps> = ({
 }) => {
   return (
     <div
-      key={key}
       style={{ backgroundColor: bgColor }}
       className="relative w-full h-auto rounded-t-[64px] mt-[-80px]"
     >

@@ -29,7 +29,7 @@ const useRandomUser = () => {
 
     const data = await response.json();
 
-    return data.results.map((user: any) => ({
+    return data.results.map((user: User) => ({
       name: {
         first: user.name.first,
         last: user.name.last,
