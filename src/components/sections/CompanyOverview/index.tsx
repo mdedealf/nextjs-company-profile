@@ -6,7 +6,7 @@ import Products from "./Products/Products";
 import Testimonials from "../../Testimonials/Testimonials";
 import Teams from "./Teams/Teams";
 import Button from "@/components/ui/Button";
-import "./index.css";
+import Culture from "./Culture";
 
 const CompanyOverview: FC = () => {
   return (
@@ -23,6 +23,7 @@ const CompanyOverview: FC = () => {
       <div className="bg-main-white rounded-t-[80px] w-full md:mt-[60px] mt-[20px]">
         <Milestones />
         <Achievements />
+        <Culture />
         <Teams />
       </div>
       <Products />

@@ -5,7 +5,7 @@ import { FC } from "react";
 const Milestones: FC = () => {
   return (
     <div className="flex flex-col items-center w-full">
-      <h2 className="text-[28px] md:text-[48px] font-bold text-main-white text-center pb-[80px] md:py-[80px]">
+      <h2 className="text-[28px] md:text-[48px] font-bold text-main-white text-center pb-[80px] md:py-[80px] auto-show">
         Milestones
       </h2>
 
@@ -13,7 +13,7 @@ const Milestones: FC = () => {
         {MILESTONES_JOURNEYS.map((journey, idx) => (
           <div
             key={idx}
-            className="flex items-center w-full px-[20px] gap-[24px]"
+            className="flex items-center w-full px-[20px] gap-[24px] auto-show"
           >
             <h3 className="text-[24px] font-semibold text-main-white md:text-end">
               {journey.year}
