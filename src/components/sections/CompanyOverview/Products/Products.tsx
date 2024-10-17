@@ -6,7 +6,7 @@ import { FC } from "react";
 const Products: FC = () => {
   return (
     <div className="py-[40px] w-full">
-      <div className="flex flex-col w-full items-center gap-[12px] pt-[40px] md:pt-[80px] pb-[40px]">
+      <div className="flex flex-col w-full items-center gap-[12px] pt-[40px] md:pt-[80px] pb-[40px] auto-show">
         <h2 className="text-[26px] md:text-[48px] font-bold text-center mx-[20px]">
           We build products that nations run on
         </h2>

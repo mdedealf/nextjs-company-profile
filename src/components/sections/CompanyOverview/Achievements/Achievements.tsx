@@ -6,7 +6,7 @@ import { FC } from "react";
 const Achievements: FC = () => {
   return (
     <div className="flex flex-col gap-[30px] bg-main-white w-full pb-[30px] pt-[80px] border-b-[1px] border-main-black border-opacity-10">
-      <h2 className="text-[26px] md:text-[48px] font-bold text-center mx-[20px] text-main-black">
+      <h2 className="text-[26px] md:text-[48px] font-bold text-center mx-[20px] text-main-black auto-show">
         We scale like a dream
       </h2>
 

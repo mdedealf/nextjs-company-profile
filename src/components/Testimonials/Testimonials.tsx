@@ -6,7 +6,7 @@ import { FC } from "react";
 const Testimonials: FC = () => {
   return (
     <div className="flex flex-col bg-main-white w-full text-main-black transition-all">
-      <div className="flex flex-col w-full items-center gap-[12px] pt-[80px] md:pt-[120px] pb-[80px] md:pb-[120px]">
+      <div className="flex flex-col w-full items-center gap-[12px] pt-[80px] md:pt-[120px] pb-[80px] md:pb-[120px] auto-show">
         <h2 className="text-[26px] md:text-[48px] font-bold text-center mx-[20px]">
           What our testimonials says
         </h2>

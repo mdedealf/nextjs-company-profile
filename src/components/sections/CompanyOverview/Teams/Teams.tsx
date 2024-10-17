@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 const Teams: FC = () => {
   return (
     <div className="flex flex-col bg-main-white pb-[120px] md:px-[180px] w-full">
-      <div className="flex flex-col w-full items-center gap-[12px] pt-[40px] md:pt-[80px] pb-[40px]">
+      <div className="flex flex-col w-full items-center gap-[12px] pt-[40px] md:pt-[80px] pb-[40px] auto-show">
         <h2 className="text-[26px] md:text-[48px] font-bold text-center mx-[20px] text-main-black">
           Meet our founders
         </h2>
