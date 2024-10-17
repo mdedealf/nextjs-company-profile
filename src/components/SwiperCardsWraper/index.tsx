@@ -73,10 +73,10 @@ const SwiperCards: FC<SwiperCardsProps> = ({
           <SwiperSlide>{children}</SwiperSlide>
         )}
 
-        <div className="relative custom-prev bg-main-white text-main-black border rounded-full p-[10px] opacity-30 hover:opacity-100 transition-all">
+        <div className="relative custom-prev bg-main-white text-main-black border rounded-full p-[10px] opacity-50 hover:opacity-100 transition-all">
           <ChevronLeftIcon className="h-5 w-5" />
         </div>
-        <div className="custom-next bg-main-white text-main-black border rounded-full p-[10px] opacity-30 hover:opacity-100 transition-all">
+        <div className="custom-next bg-main-white text-main-black border rounded-full p-[10px] opacity-50 hover:opacity-100 transition-all">
           <ChevronRightIcon className="h-5 w-5" />
         </div>
         <div className="custom-pagination-container relative flex justify-center items-center w-full mt-[20px]">

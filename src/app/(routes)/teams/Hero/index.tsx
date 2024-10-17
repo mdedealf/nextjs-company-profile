@@ -3,24 +3,18 @@ import { FC } from "react";
 
 const Hero: FC = () => {
   return (
-    <section className="h-screen w-full transition-all duration-700 ease-in bg-main-black">
-      <div className="relative h-auto w-auto transition-all">
+    <section className="h-screen w-full transition-all duration-700 ease-in bg-main-green">
+      <div className="relative h-screen w-full transition-all">
         <Image
           src="/images/gojek-cta.svg"
           alt="Gojek hero image"
           width={2560}
           height={1440}
-          className="relative h-screen w-full object-cover"
+          className="absolute right-0 bottom-0 h-auto w-[800px] object-cover"
         />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100px, rgba(0, 0, 0, 0.2) 100%)",
-          }}
-        />
+        <div className="absolute inset-0 bg-gradient-to-b from-main-black/10 to-main-black/0" />
       </div>
-      <div className="absolute top-0 flex flex-col items-start justify-end w-full h-screen py-[50px] md:py-[200px] md:px-[120px] z-10">
+      <div className="absolute top-0 flex flex-col items-start justify-center w-full h-screen py-[50px] md:py-[200px] md:px-[120px] z-10">
         <div className="flex flex-col p-[22px] gap-[19px] mb-[20px]">
           <h1 className="text-[26px] font-semibold text-main-white  md:w-[55%] md:text-[48px]">
             Meet the Minds Behind the Movement.

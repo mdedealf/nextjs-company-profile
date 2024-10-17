@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC, useEffect, useState } from "react";
 
-const words = ["Effortless", "Seamless", "Convenient"];
+const words = ["Effortless.", "Seamless.", "Convenient."];
 
 const Hero: FC = () => {
   const [currentWord, setCurrentWord] = useState(words[0]);
@@ -19,7 +19,7 @@ const Hero: FC = () => {
         setCurrentWord(words[wordIndex]);
         setAnimate(true);
       }, 100);
-    }, 5000);
+    }, 4000);
 
     return () => clearInterval(wordChangeInterval);
   }, [wordIndex]);
