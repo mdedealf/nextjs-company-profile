@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Link from "next/link";
 import FounderImages from "@/components/FounderImages";
+import Button from "@/components/ui/Button";
 
 const Teams: FC = () => {
   return (
@@ -9,9 +10,9 @@ const Teams: FC = () => {
         <h2 className="text-[26px] md:text-[48px] font-bold text-center mx-[20px] text-main-black">
           Meet our founders
         </h2>
-        <div className="bg-main-green text-main-white px-[24px] py-[12px] flex items-center justify-center rounded-[24px] font-semibold text-[18px]">
+        <Button>
           <Link href="/teams">See more our teams</Link>
-        </div>
+        </Button>
       </div>
       <div className="flex flex-col md:flex-row justify-center px-[20px] gap-[100px] md:gap-[140px] mt-[80px]">
         <FounderImages />

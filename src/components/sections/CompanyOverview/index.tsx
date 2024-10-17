@@ -5,6 +5,7 @@ import Achievements from "./Achievements/Achievements";
 import Products from "./Products/Products";
 import Testimonials from "./Testimonials/Testimonials";
 import Teams from "./Teams/Teams";
+import Button from "@/components/ui/Button";
 
 const CompanyOverview: FC = () => {
   return (
@@ -13,9 +14,11 @@ const CompanyOverview: FC = () => {
         <h2 className="text-[26px] md:text-[48px] font-semibold text-center mx-[20px]">
           We&#39;re Gojek, the drivers of change
         </h2>
-        <div className="bg-main-green text-main-white px-[24px] py-[12px] flex items-center justify-center rounded-[24px] font-semibold text-[18px]">
-          <Link href="/about-us">More About Us</Link>
-        </div>
+        {/* <div className=""> */}
+          <Button>
+            <Link href="/about-us">More About Us</Link>
+          </Button>
+        {/* </div> */}
       </div>
 
       <div className="bg-main-white rounded-t-[80px] w-full md:mt-[60px] mt-[20px]">

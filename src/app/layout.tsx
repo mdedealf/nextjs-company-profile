@@ -8,7 +8,7 @@ import QueryClientWraper from "@/components/QueryClientWraper";
 
 export const metadata: Metadata = {
   title: "Gojek Clone",
-  description: "Welcome to my clone project for study purpose only!",
+  description: "Welcome to my Gojek clone project for study purpose only!",
   icons: {
     icon: "/favicon.png",
   },

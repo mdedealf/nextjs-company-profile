@@ -12,7 +12,7 @@ const Hero: FC = () => {
           height={720}
           className="relative h-[calc(100vh-200px)] md:h-screen w-full object-cover"
         />
-        <div className="absolute inset-0 bg-main-black opacity-30" />
+        <div className="absolute inset-0 bg-main-black opacity-40" />
       </div>
       <div className="absolute top-0 flex flex-col items-start justify-end w-full h-[calc(100vh-200px)] md:h-screen py-[50px] md:py-[200px] md:px-[120px] z-10 gap-[16px]">
         <h1 className="text-[26px] font-semibold text-main-white px-[22px] md:w-[55%] md:text-[48px]">

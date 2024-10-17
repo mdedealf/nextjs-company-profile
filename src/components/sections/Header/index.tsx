@@ -1,12 +1,13 @@
 "use client";
 import Image from "next/image";
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import NavLink from "./NavLink/NavLink";
 import { NAVBAR_LINKS } from "@/constant/navbarLinks";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
 
 const Header: FC = () => {
   const [isShowNav, setIsShowNav] = useState(false);
+  const [isScolled, setIsScrolled] = useState(false);
 
   const handleShowNav = () => {
     setIsShowNav((prev) => !prev);
@@ -16,8 +17,23 @@ const Header: FC = () => {
     setIsShowNav(false);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) setIsScrolled(true);
+      else setIsScrolled(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="fixed top-0 h-[80px] md:h-[100px] w-full flex justify-between items-center px-[16px] md:px-[40px] bg-main-black text-main-white transition-all ease-in delay-300 z-30">
+    <header
+      className={`fixed top-0 h-[80px] md:h-[100px] w-full flex justify-between items-center px-[16px] md:px-[140px] text-main-white transition-all ease-in duration-300 z-30 ${
+        isScolled ? "bg-main-black" : "bg-transparent"
+      }`}
+    >
       {!isShowNav ? (
         <nav className="flex items-center justify-between w-full gap-[40px] transition-all duration-500 ease-in-out">
           <div className="flex items-center justify-between w-full">
@@ -53,7 +69,7 @@ const Header: FC = () => {
               <XMarkIcon className="w-6 h-6 cursor-pointer" />
             </span>
           </div>
-          <div className="flex flex-col justify-center gap-5 px-[16px] py-[30px] text-[22px] text-main-white">
+          <div className="flex flex-col items-center justify-center gap-7 px-[16px] py-[30px] text-[22px] text-main-white">
             {NAVBAR_LINKS.map((nav, idx) => (
               <NavLink
                 key={idx}
