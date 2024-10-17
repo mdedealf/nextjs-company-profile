@@ -27,7 +27,7 @@ const ProductLists: FC<ProductListsProps> = ({
       style={{ backgroundColor: bgColor }}
       className="relative w-full h-auto rounded-t-[64px] mt-[-80px]"
     >
-      <div className="relative z-10 flex flex-col gap-[20px] px-[20px] lg:px-[40px] 2xl:px-[180px] md:max-w-[1600px] py-[80px]">
+      <div className="relative z-10 flex flex-col gap-[20px] px-[20px] lg:px-[40px] 2xl:px-[180px] md:max-w-[1600px] py-[80px] auto-show">
         <h2 className="text-[26px] md:text-[36px] font-bold text-main-black">
           {title}
         </h2>
@@ -35,7 +35,7 @@ const ProductLists: FC<ProductListsProps> = ({
           {description}
         </p>
       </div>
-      <div className="relative z-10 w-full pb-[160px] rounded-t-[64px]">
+      <div className="relative z-10 w-full pb-[160px] rounded-t-[64px] auto-show">
         <div className="flex w-full gap-[20px] md:gap-[30px] z-10 px-[20px] lg:px-[40px] 2xl:px-[180px]">
           <SwiperCards slidesPerView={4} loop={true}>
             {product.map((prod, idx) => (
