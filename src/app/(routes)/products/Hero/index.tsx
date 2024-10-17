@@ -3,18 +3,24 @@ import { FC } from "react";
 
 const Hero: FC = () => {
   return (
-    <section className="h-[calc(100vh-200px)] md:h-screen w-full transition-all duration-700 ease-in bg-main-black]">
+    <section className="h-screen w-full transition-all duration-700 ease-in bg-main-black]">
       <div className="relative h-auto md:h-screen w-full transition-all">
         <Image
           src="/images/gojek-banner.png"
           alt="About page hero image"
           width={1280}
           height={720}
-          className="relative h-[calc(100vh-200px)] md:h-screen w-full object-cover"
+          className="relative h-screen w-full object-cover"
         />
-        <div className="absolute inset-0 bg-main-black opacity-40" />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100px, rgba(0, 0, 0, 0.2) 100%)",
+          }}
+        />
       </div>
-      <div className="absolute top-0 flex flex-col items-start justify-end w-full h-[calc(100vh-200px)] md:h-screen py-[50px] md:py-[200px] md:px-[120px] z-10 gap-[16px]">
+      <div className="absolute top-0 flex flex-col items-start justify-center md:justify-end w-full h-screen py-[50px] md:py-[200px] md:px-[120px] z-10 gap-[16px]">
         <h1 className="text-[26px] font-semibold text-main-white px-[22px] md:w-[55%] md:text-[48px]">
           All-in-One Services at Your Fingertips
         </h1>

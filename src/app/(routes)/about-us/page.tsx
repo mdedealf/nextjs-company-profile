@@ -5,9 +5,9 @@ import FounderImages from "@/components/FounderImages";
 
 const AboutUsPage: FC = () => {
   return (
-    <section className="w-full">
+    <section className="w-full h-auto">
       <Hero />
-      <div className="flex flex-col items-center justify-center w-full mb-[80px] gap-[60px] bg-main-white py-[120px] lg:px-[180px]">
+      <div className="flex flex-col items-center justify-center w-full mb-[80px] gap-[60px] bg-main-white py-[120px] px-[20px] md:px-[120px] lg:px-[180px]">
         <div className="w-full flex flex-col gap-[20px]">
           <h2 className="text-[48px] font-bold text-start w-full">
             Meet the Founders

@@ -12,7 +12,13 @@ const Hero: FC = () => {
           height={1440}
           className="relative h-screen w-full object-cover"
         />
-        <div className="absolute inset-0 bg-main-black opacity-40" />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100px, rgba(0, 0, 0, 0.2) 100%)",
+          }}
+        />
       </div>
       <div className="absolute top-0 flex flex-col items-start justify-end w-full h-screen py-[50px] md:py-[200px] md:px-[120px] z-10">
         <div className="flex flex-col p-[22px] gap-[19px] mb-[20px]">

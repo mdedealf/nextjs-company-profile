@@ -21,7 +21,6 @@ const Achievements: FC = () => {
               <Image
                 src={achievement.image}
                 alt={achievement.alt}
-                priority={true}
                 width={achievement.width}
                 height={achievement.height}
                 className="translate-y-[-25%] w-full h-auto object-cover"
@@ -49,7 +48,6 @@ const Achievements: FC = () => {
                 <Image
                   src={achievement.image}
                   alt={achievement.alt}
-                  priority={true}
                   width={achievement.width}
                   height={achievement.height}
                   className="w-full h-auto"
