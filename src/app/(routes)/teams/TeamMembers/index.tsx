@@ -37,10 +37,11 @@ const TeamMembers: FC = () => {
           Meet the Team
         </h2>
         <p className="text-[18px] md:max-w-[65%]">
-          Behind every solution, there's a dedicated team driving innovation. We
-          are passionate about connecting people, solving real-world problems,
-          and creating seamless experiences for millions. Together, we push
-          boundaries, one ride, one order, one solution at a time.
+          Behind every solution, there&#39;s a dedicated team driving
+          innovation. We are passionate about connecting people, solving
+          real-world problems, and creating seamless experiences for millions.
+          Together, we push boundaries, one ride, one order, one solution at a
+          time.
         </p>
       </div>
       <div className="flex flex-col w-full md:grid md:grid-cols-3 lg:grid-cols-4 gap-[40px]">
@@ -60,7 +61,7 @@ const TeamMembers: FC = () => {
               <div className="absolute top-0 h-full w-full bg-main-black opacity-10 group-hover:opacity-0 rounded-[12px] transition-all duration-300" />
             </div>
             <div className="flex flex-col w-full justify-start">
-              <span className="text-[18px] font-extrabold group-hover:text-[#00880D] mb-[6px]">
+              <span className="text-[20px] font-extrabold mb-[6px]">
                 {team.name.first} {team.name.last}
               </span>
 

@@ -1,26 +1,14 @@
-import Image from "next/image";
 import { FC } from "react";
+import { GOJEK_FOUNDERS } from "@/constant/gojekFounders";
+import Image from "next/image";
 
 const FounderImages: FC = () => {
-  const GOJEK_FOUNDERS = [
-    {
-      name: "Nadiem Makarim",
-      title: "Gojek Co-Founders",
-      image: "/images/founders/nadiem-makarim.png",
-    },
-    {
-      name: "Kevin Aluwi",
-      title: "Gojek Co-Founders",
-      image: "/images/founders/kevin-aluwi.png",
-    },
-  ];
-
   return (
     <>
       {GOJEK_FOUNDERS.map((founder, idx) => (
         <div
           key={idx}
-          className="flex flex-col items-center gap-[20px] group cursor-pointer"
+          className="flex flex-col items-center gap-[10px] group cursor-pointer"
         >
           <div className="min-h-[282px] max-h-auto w-full md:h-[282px] md:w-[282px] relative">
             <Image
