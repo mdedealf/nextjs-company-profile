@@ -10,11 +10,12 @@ interface NavLink {
 const NavLink: FC<NavLink> = ({ path, linkName, onClick }) => {
   return (
     <Link
-      className="hover:underline font-semibold"
+      className="group relative font-semibold text-[18px]"
       href={path}
       onClick={onClick}
     >
       {linkName}
+      <span className="absolute left-0 bottom-[-6px] w-0 h-[2px] bg-main-white transition-all duration-200 group-hover:w-full" />
     </Link>
   );
 };

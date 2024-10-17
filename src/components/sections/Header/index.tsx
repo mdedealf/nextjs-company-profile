@@ -4,6 +4,7 @@ import { FC, useEffect, useState } from "react";
 import NavLink from "./NavLink/NavLink";
 import { NAVBAR_LINKS } from "@/constant/navbarLinks";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
+import Link from "next/link";
 
 const Header: FC = () => {
   const [isShowNav, setIsShowNav] = useState(false);
@@ -37,14 +38,16 @@ const Header: FC = () => {
       {!isShowNav ? (
         <nav className="flex items-center justify-between w-full gap-[40px] transition-all duration-500 ease-in-out">
           <div className="flex items-center justify-between w-full">
-            <Image
-              src="/images/gojek-logo.svg"
-              alt="Logo"
-              width={112}
-              height={32}
-              priority={true}
-              className="h-[28px] w-[100px] md:h-auto md:w-auto"
-            />
+            <Link href="/">
+              <Image
+                src="/images/gojek-logo.svg"
+                alt="Logo"
+                width={112}
+                height={32}
+                priority={true}
+                className="h-[28px] w-[100px] md:h-auto md:w-auto"
+              />
+            </Link>
             <button className="md:hidden text-[18px]" onClick={handleShowNav}>
               <Bars3Icon className="h-6 w-6 cursor-pointer" />
             </button>

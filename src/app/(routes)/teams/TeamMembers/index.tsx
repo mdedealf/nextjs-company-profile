@@ -10,13 +10,13 @@ const TeamMembers: FC = () => {
   if (error) return <div>Error</div>;
   if (isLoading)
     return (
-      <div className="h-screen w-full text-center text-[26px] font-bold text-[#00880D]">
+      <div className="h-screen w-full text-center text-[26px] font-bold text-[#00880D] mt-[180px]">
         Loading...
       </div>
     );
 
   return (
-    <div className="min-h-screen max-w-[1280px] flex flex-col md:items-center justify-center w-full gap-[60px] px-[20px] pb-[120px]">
+    <div className="min-h-screen max-w-[1280px] flex flex-col md:items-center justify-center w-full gap-[60px] px-[20px] py-[120px]">
       <div className="flex flex-col w-full mb-[80px] gap-[60px]">
         <div className="w-full flex flex-col gap-[20px]">
           <h2 className="text-[48px] font-bold text-start w-full">

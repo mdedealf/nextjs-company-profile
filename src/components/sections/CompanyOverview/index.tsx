@@ -3,7 +3,7 @@ import { FC } from "react";
 import Milestones from "./Milestones/Milestones";
 import Achievements from "./Achievements/Achievements";
 import Products from "./Products/Products";
-import Testimonials from "./Testimonials/Testimonials";
+import Testimonials from "../../Testimonials/Testimonials";
 import Teams from "./Teams/Teams";
 import Button from "@/components/ui/Button";
 

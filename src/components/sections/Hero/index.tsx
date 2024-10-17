@@ -18,10 +18,10 @@ const Hero: FC = () => {
       </div>
       <div className="absolute top-0 flex flex-col items-start justify-center md:justify-end w-full h-screen py-[50px] md:py-[200px] md:px-[120px] z-10">
         <div className="flex flex-col p-[22px] gap-[19px] mb-[20px]">
-          <h1 className="text-[26px] font-bold text-main-white  md:w-[55%] md:text-[48px]">
+          <h1 className="text-[26px] font-semibold text-main-white  md:w-[55%] md:text-[48px]">
             Your Everyday, Made Effortless.
           </h1>
-          <p className="text-[18px] text-main-white font-normal md:w-[55%] md:text-[20px]">
+          <p className="text-[18px] text-main-white font-light md:w-[55%] md:text-[20px]">
             From rides to food, payments to deliveries, Gojek brings everything
             you need into one app. Simplify your day with just a tap.
           </p>
