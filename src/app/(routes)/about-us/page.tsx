@@ -7,13 +7,13 @@ const AboutUsPage: FC = () => {
   return (
     <section className="w-full h-auto">
       <Hero />
-      <div className="flex flex-col items-center justify-center w-full mb-[80px] gap-[60px] bg-main-white py-[120px] px-[20px] md:px-[120px] lg:px-[180px]">
+      <div className="flex flex-col items-center justify-center w-full mb-[80px] gap-[60px] bg-main-white pt-[80px] pb-[120px] px-[20px] md:px-[120px] lg:px-[180px]">
         <div className="w-full flex flex-col gap-[20px]">
-          <h2 className="text-[48px] font-bold text-start w-full">
-            Meet the Founders
+          <h2 className="text-[48px] font-bold text-center w-full">
+            Know About Our Founders
           </h2>
         </div>
-        <div className="flex flex-col md:flex-row w-full gap-[80px]">
+        <div className="flex flex-col items-center justify-center md:flex-row w-full gap-[80px]">
           <FounderImages />
         </div>
       </div>

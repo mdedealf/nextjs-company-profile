@@ -20,17 +20,17 @@ const Hero: FC = () => {
           }}
         />
       </div>
-      <div className="absolute top-0 flex flex-col items-start justify-center md:justify-end w-full h-screen py-[50px] md:py-[200px] md:px-[120px] z-10 gap-[16px]">
-        <h1 className="text-[26px] font-semibold text-main-white px-[22px] md:w-[55%] md:text-[48px]">
-          Revolutionizing Urban Mobility
-        </h1>
-        <p className="text-[16px] font-light text-main-white px-[22px] md:w-[55%] md:text-[20px]">
-          Gojek is committed to reshaping urban mobility by connecting users
-          with essential services—from rides to food delivery—all in one app.
-          Our innovative platform prioritizes reliability and convenience,
-          enhancing daily life for our users. Join us as we redefine the future
-          of on-demand services.
-        </p>
+      <div className="absolute top-0 flex flex-col items-start justify-center md:justify-end w-full h-screen py-[50px] md:py-[200px] md:px-[120px] z-10">
+        <div className="flex flex-col p-[22px] gap-[19px] mb-[20px]">
+          <h1 className="text-[26px] font-semibold text-main-white  md:w-[55%] md:text-[48px]">
+            Revolutionizing Urban Mobility.
+          </h1>
+          <p className="text-[18px] text-main-white font-light md:w-[55%] md:text-[20px]">
+            Gojek is committed to reshaping urban mobility by connecting users
+            with essential services—from rides to food delivery—all in one app,
+            enhancing daily life for our users.
+          </p>
+        </div>
       </div>
     </section>
   );

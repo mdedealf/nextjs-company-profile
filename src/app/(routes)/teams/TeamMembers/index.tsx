@@ -16,7 +16,7 @@ const TeamMembers: FC = () => {
     );
 
   return (
-    <div className="min-h-screen max-w-[1280px] flex flex-col md:items-center justify-center w-full gap-[60px] px-[20px] py-[120px]">
+    <div className="min-h-screen max-w-[1280px] flex flex-col md:items-center justify-center w-full gap-[60px] px-[20px] pt-[80px] pb-[120px]">
       <div className="flex flex-col w-full mb-[80px] gap-[60px]">
         <div className="w-full flex flex-col gap-[20px]">
           <h2 className="text-[48px] font-bold text-start w-full">

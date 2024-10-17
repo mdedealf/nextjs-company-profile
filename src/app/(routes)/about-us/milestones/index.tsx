@@ -5,7 +5,7 @@ import { FC } from "react";
 const Milestones: FC = () => {
   return (
     <div className="flex flex-col items-center w-full">
-      <h2 className="text-[28px] md:text-[48px] font-bold text-main-white text-center pt-[80px] pb-[80px]">
+      <h2 className="text-[28px] md:text-[48px] font-bold text-main-white text-center pb-[80px] md:py-[80px]">
         Milestones
       </h2>
 

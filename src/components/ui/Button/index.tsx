@@ -7,7 +7,7 @@ type ButtonProps = React.HTMLAttributes<HTMLButtonElement> & {
 };
 
 const buttonVariants = cva(
-  "py-2 px-4 rounded-full font-semibold hover:opacity-90 text-[18px]",
+  "py-2 px-4 rounded-full font-semibold hover:opacity-90 text-[16px]",
   {
     variants: {
       variant: {
