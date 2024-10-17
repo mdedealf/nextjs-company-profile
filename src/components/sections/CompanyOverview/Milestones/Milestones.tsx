@@ -17,7 +17,6 @@ const Milestones: FC = () => {
               alt={data.image}
               width={149}
               height={157}
-              priority={true}
               className="h-[157px] w-[149px]"
             />
           </div>
@@ -42,7 +41,6 @@ const Milestones: FC = () => {
                   alt={data.image}
                   width={149}
                   height={157}
-                  priority={true}
                   className="h-[157px] w-[149px]"
                 />
               </div>
