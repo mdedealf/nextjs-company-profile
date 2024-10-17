@@ -15,9 +15,9 @@ const CompanyOverview: FC = () => {
           We&#39;re Gojek, the drivers of change
         </h2>
         {/* <div className=""> */}
-          <Button>
-            <Link href="/about-us">More About Us</Link>
-          </Button>
+        <Button>
+          <Link href="/about-us">More About Us</Link>
+        </Button>
         {/* </div> */}
       </div>
 
@@ -28,8 +28,6 @@ const CompanyOverview: FC = () => {
       </div>
       <Products />
       <Testimonials />
-
-      <div>Culture</div>
     </section>
   );
 };
