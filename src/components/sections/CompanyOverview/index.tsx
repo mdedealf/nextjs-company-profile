@@ -3,8 +3,8 @@ import { FC } from "react";
 import Milestones from "./Milestones/Milestones";
 import Achievements from "./Achievements/Achievements";
 import Products from "./Products/Products";
-import Testimonials from "../../Testimonials/Testimonials";
-import Teams from "../../Teams/Teams";
+import Testimonials from "@/components/Testimonials/Testimonials";
+import Teams from "@/components/Teams/Teams";
 import Button from "@/components/ui/Button";
 import Culture from "./Culture";
 import HistoryValues from "../../HistoryValues";
@@ -25,7 +25,7 @@ const CompanyOverview: FC = () => {
         <Milestones />
         <Achievements />
         <Culture />
-        <HistoryValues/>
+        <HistoryValues />
         <Teams />
       </div>
       <Products />
