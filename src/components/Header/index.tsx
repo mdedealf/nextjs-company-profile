@@ -48,7 +48,11 @@ const Header: FC = () => {
                 className="h-[28px] w-[100px] md:h-auto md:w-auto"
               />
             </Link>
-            <button className="md:hidden text-[18px]" onClick={handleShowNav}>
+            <button
+              className="md:hidden text-[18px]"
+              aria-label="Open menu"
+              onClick={handleShowNav}
+            >
               <Bars3Icon className="h-6 w-6 cursor-pointer" />
             </button>
           </div>
@@ -68,9 +72,13 @@ const Header: FC = () => {
               height={32}
               className="h-[28px] w-[100px] md:h-auto md:w-auto"
             />
-            <span className="text-[18px]" onClick={handleShowNav}>
+            <button
+              className="text-[18px]"
+              aria-label="Close menu"
+              onClick={handleShowNav}
+            >
               <XMarkIcon className="w-6 h-6 cursor-pointer" />
-            </span>
+            </button>
           </div>
           <div className="flex flex-col items-center justify-center gap-7 px-[16px] py-[30px] text-[22px] text-main-white">
             {NAVBAR_LINKS.map((nav, idx) => (

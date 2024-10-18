@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { FC, ReactNode } from "react";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/sections/Header";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import QueryClientWraper from "@/components/QueryClientWraper";
 
