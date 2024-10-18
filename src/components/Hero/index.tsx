@@ -28,7 +28,7 @@ const Hero: FC = () => {
     <section className="h-screen w-full transition-all duration-700 ease-in-out bg-main-black]">
       <div className="relative h-auto md:h-screen w-full transition-all">
         <Image
-          src="/images/hero-img.jpg"
+          src="/images/hero-img-upscaled.webp"
           alt="Gojek hero image"
           width={3200}
           height={1724}
