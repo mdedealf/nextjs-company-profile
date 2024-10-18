@@ -5,10 +5,11 @@ import NavLink from "./NavLink/NavLink";
 import { NAVBAR_LINKS } from "@/constant/navbarLinks";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 const Header: FC = () => {
   const [isShowNav, setIsShowNav] = useState(false);
-  const [isScolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleShowNav = () => {
     setIsShowNav((prev) => !prev);
@@ -31,9 +32,13 @@ const Header: FC = () => {
 
   return (
     <header
-      className={`fixed top-0 h-[80px] md:h-[100px] w-full flex justify-between items-center px-[16px] md:px-[140px] text-main-white transition-all ease-in duration-300 z-30 ${
-        isScolled ? "bg-main-black" : "bg-transparent"
-      }`}
+      className={cn(
+        "fixed top-0 h-[80px] md:h-[100px] w-full flex justify-between items-center px-[16px] md:px-[140px] text-main-white transition-all ease-in duration-300 z-30",
+        {
+          "bg-main-black": isScrolled,
+          "bg-transparent": !isScrolled,
+        }
+      )}
     >
       {!isShowNav ? (
         <nav className="flex items-center justify-between w-full gap-[40px] transition-all duration-500 ease-in-out">
