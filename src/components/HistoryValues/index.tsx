@@ -1,24 +1,7 @@
+import { VALUES_DATA } from "@/constant/valuesDatas";
 import { FC } from "react";
 
 const HistoryValues: FC = () => {
-  const VALUES_DATA = [
-    {
-      title: "Customer Centricity",
-      description:
-        "We prioritize the needs and satisfaction of our customers by offering seamless and personalized experiences. Focus on: fast response times, easy-to-use interfaces, and exceptional customer support.",
-    },
-    {
-      title: "Reliability",
-      description:
-        "We ensure that our services are dependable, punctual, and consistent, providing peace of mind to customers who rely on us. Focus on: timely rides and deliveries, real-time tracking, and consistent quality of service..",
-    },
-    {
-      title: "Safety",
-      description:
-        "We are committed to the safety of our passengers, drivers, and delivery partners by adhering to strict safety standards. Focus on: driver background checks, vehicle maintenance, real-time support in emergencies, and transparent safety protocols..",
-    },
-  ];
-
   return (
     <div className="flex flex-col w-full items-center gap-[80px] pt-[40px] md:pt-[80px] pb-[80px] px-[20px] border-t-[1px]">
       <div className=" auto-show">
