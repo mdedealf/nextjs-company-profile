@@ -1,6 +1,6 @@
 "use client";
 import { FC } from "react";
-import Hero from "@/components/Hero";
+import Hero from "@/components/sections/Hero";
 import CompanyOverview from "@/components/sections/CompanyOverview";
 
 const HomePage: FC = () => {

@@ -4,9 +4,10 @@ import Milestones from "./Milestones/Milestones";
 import Achievements from "./Achievements/Achievements";
 import Products from "./Products/Products";
 import Testimonials from "../../Testimonials/Testimonials";
-import Teams from "./Teams/Teams";
+import Teams from "../../Teams/Teams";
 import Button from "@/components/ui/Button";
 import Culture from "./Culture";
+import HistoryValues from "../../HistoryValues";
 
 const CompanyOverview: FC = () => {
   return (
@@ -24,6 +25,7 @@ const CompanyOverview: FC = () => {
         <Milestones />
         <Achievements />
         <Culture />
+        <HistoryValues/>
         <Teams />
       </div>
       <Products />
