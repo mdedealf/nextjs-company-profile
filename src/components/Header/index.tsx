@@ -44,14 +44,7 @@ const Header: FC = () => {
         <nav className="flex items-center justify-between w-full gap-[40px] transition-all duration-500 ease-in-out">
           <div className="flex items-center justify-between w-full">
             <Link href="/">
-              <Image
-                src="/images/gojek-logo.svg"
-                alt="Logo"
-                width={112}
-                height={32}
-                priority={true}
-                className="h-[28px] w-[100px] md:h-auto md:w-auto"
-              />
+              <span className="text-[24px] font-semibold">Ngojol</span>
             </Link>
             <button
               className="md:hidden text-[18px]"

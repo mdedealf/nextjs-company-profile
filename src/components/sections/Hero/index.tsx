@@ -1,10 +1,11 @@
 "use client";
 import Button from "@/components/ui/Button";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { FC, useEffect, useState } from "react";
 
-const words = ["Effortless.", "Seamless.", "Convenient."];
+const words = ["Easier.", "Effortless.", "Seamless.", "Convenient."];
 
 const Hero: FC = () => {
   const [currentWord, setCurrentWord] = useState(words[0]);
@@ -14,9 +15,11 @@ const Hero: FC = () => {
   useEffect(() => {
     const wordChangeInterval = setInterval(() => {
       setAnimate(false);
+
       setTimeout(() => {
-        setWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-        setCurrentWord(words[wordIndex]);
+        const newIndex = (wordIndex + 1) % words.length;
+        setWordIndex(newIndex);
+        setCurrentWord(words[newIndex]);
         setAnimate(true);
       }, 100);
     }, 4000);
@@ -41,15 +44,16 @@ const Hero: FC = () => {
           <h1 className="text-[30px] font-semibold text-main-white md:w-[55%] md:text-[48px]">
             Your Everyday, Made
             <span
-              className={`block font-normal ${
-                animate ? "animate-slide-up" : ""
-              }`}
+              className={cn("block font-normal", {
+                "animate-slide-up": animate,
+                "": !animate,
+              })}
             >
               {currentWord}
             </span>
           </h1>
           <p className="text-[18px] text-main-white font-light md:w-[55%] md:text-[20px]">
-            From rides to food, payments to deliveries, Gojek brings everything
+            From rides to food, payments to deliveries, ngojol brings everything
             you need into one app. Simplify your day with just a tap.
           </p>
         </div>

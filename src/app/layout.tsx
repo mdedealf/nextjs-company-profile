@@ -7,11 +7,8 @@ import Footer from "@/components/Footer";
 import QueryClientWraper from "@/components/QueryClientWraper";
 
 export const metadata: Metadata = {
-  title: "Gojek Clone",
+  title: "Ngojol",
   description: "Welcome to my Gojek clone project for study purpose only!",
-  icons: {
-    icon: "/favicon.png",
-  },
 };
 
 const poppins = Poppins({

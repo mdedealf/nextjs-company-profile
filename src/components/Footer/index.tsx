@@ -6,16 +6,7 @@ const Footer: FC = () => {
   return (
     <footer className="w-full h-auto text-main-white border-t-[1px] border-main-white border-opacity-20">
       <div className="flex flex-col gap-[54px] md:px-[180px] md:py-[120px] px-[18px] py-[32px]">
-        <div>
-          <Image
-            src="/images/gojek-logo.svg"
-            alt="gojek logo"
-            width={112}
-            height={32}
-            priority={true}
-            className="h-auto w-auto"
-          />
-        </div>
+        <span className="text-[22px] font-semibold">Ngojol</span>
         <div className="grid grid-cols-2 pb-[40px] gap-[32px]  md:grid-cols-5 border-b-[1px] border-b-main-white border-opacity-25">
           {FOOTER_MENUS.map((menu, idx) => (
             <div
