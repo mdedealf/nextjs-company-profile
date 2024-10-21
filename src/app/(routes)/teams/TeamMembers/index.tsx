@@ -1,5 +1,7 @@
 "use client";
 import FounderImages from "@/components/FounderImages";
+import Error from "@/components/ui/Error";
+import Loading from "@/components/ui/Loading";
 import useRandomUser from "@/hooks/useRandomUser";
 import Image from "next/image";
 import { FC } from "react";
@@ -7,13 +9,8 @@ import { FC } from "react";
 const TeamMembers: FC = () => {
   const { data: teams, error, isLoading } = useRandomUser();
 
-  if (error) return <div>Error</div>;
-  if (isLoading)
-    return (
-      <div className="h-screen w-full text-center text-[26px] font-bold text-[#00880D] mt-[180px]">
-        Loading...
-      </div>
-    );
+  if (error) return <Error />;
+  if (isLoading) return <Loading />;
 
   return (
     <div className="min-h-screen max-w-[1280px] flex flex-col md:items-center justify-center w-full gap-[60px] px-[20px] pt-[80px] pb-[120px]">
