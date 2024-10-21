@@ -26,7 +26,7 @@ const Hero: FC = () => {
             Revolutionizing Urban Mobility.
           </h1>
           <p className="text-[18px] text-main-white font-light md:w-[55%] md:text-[20px]">
-            Gojek is committed to reshaping urban mobility by connecting users
+            Ngojol is committed to reshaping urban mobility by connecting users
             with essential services—from rides to food delivery—all in one app,
             enhancing daily life for our users.
           </p>

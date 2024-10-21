@@ -20,7 +20,7 @@ const Hero: FC = () => {
             Meet the Minds Behind the Movement.
           </h1>
           <p className="text-[18px] text-main-white font-light md:w-[55%] md:text-[20px]">
-            At Gojek, our teams are the driving force behind transformative
+            At Ngojol, our teams are the driving force behind transformative
             innovations. Get to know the passionate individuals who are
             redefining convenience and shaping the future of everyday services.
           </p>
